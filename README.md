@@ -352,12 +352,6 @@ Se construyen en protoboard los circuitos del control y del caso con los valores
 
 Se construye el controlador analógico y se conecta con el circuito del caso. Se configura la alimentación simétrica de los amplificadores operacionales de acuerdo con las especificaciones del laboratorio y se registran las respuestas en lazo abierto y lazo cerrado.
 
-| Montaje | Condiciones | Evidencia |
-|---|---|---|
-| Control, lazo abierto | `COMPLETAR` (frecuencia, amplitud del generador) | `COMPLETAR` (fotografía y captura de osciloscopio) |
-| Caso, lazo abierto | `COMPLETAR` | `COMPLETAR` |
-| Caso con PID, lazo cerrado | `COMPLETAR` (alimentación simétrica, ±V) | `COMPLETAR` |
-
 ### Posibles fuentes de diferencia entre simulación y experimento
 
 - Tolerancias de resistores, capacitores e inductores.
@@ -387,19 +381,6 @@ Señales presentadas en las gráficas:
 |---|---:|---:|---:|---:|
 | Control | $0.9901$ | $-1010.01\,\mathrm{rad/s}$ | $\approx 0.99\,\mathrm{ms}$ | $\approx 3.8\,\mathrm{ms}$ |
 | Caso | $0.5$ | $-2.0002\,\mathrm{rad/s}$ | $\approx 0.50\,\mathrm{s}$ | $\approx 1.96\,\mathrm{s}$ |
-
-### Verificación cruzada
-
-Se comparan las respuestas obtenidas mediante:
-
-| Fuente | Control | Caso | Caso con PID | Archivo / figura |
-|---|---|---|---|---|
-| Ecuaciones integro-diferenciales (Simulink) | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-| Función de transferencia (Simulink) | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-| Circuito equivalente (Simscape Electrical) | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-| Cuaderno de MATLAB | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | `Caso_matlab.pdf` |
-| Código en Python | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | `Caso_python.pdf` |
-| Experimento en protoboard | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | Capturas de osciloscopio |
 
 > **Nota:** los valores analíticos de la tabla anterior deben coincidir con los de las simulaciones; las diferencias con el experimento deben explicarse con base en las fuentes de error listadas en la sección de implementación experimental.
 
