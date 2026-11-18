@@ -313,34 +313,12 @@ La sintonización se realiza con la herramienta `Tune`, buscando una respuesta e
 
 | Parámetro / Métrica | Valor sintonizado |
 |---|---|
-| **Tipo de controlador** | `COMPLETAR` (PID / PI / PD) |
-| **Ganancia Proporcional ($k_P$)** | `COMPLETAR` |
-| **Ganancia Integral ($k_I$)** | `COMPLETAR` |
-| **Ganancia Derivativa ($k_D$)** | `COMPLETAR` |
-| **Tiempo de subida (Rise time)** | `COMPLETAR` |
-| **Tiempo de establecimiento (Settling time)** | `COMPLETAR` |
-| **Sobreimpulso (Overshoot)** | `COMPLETAR` |
-| **Margen de fase / estabilidad en lazo cerrado** | `COMPLETAR` |
+| **Tipo de controlador** | `PID` (PID / PI / PD) |
+| **Ganancia Proporcional ($k_P$)** | `1292.1889` |
+| **Ganancia Integral ($k_I$)** | `309191.9526` |
+| **Ganancia Derivativa ($k_D$)** | `0.17968` |
 
 > **Evidencia por incluir:** captura de la configuración de `Tune` y de la respuesta empleada durante la sintonización (`Controlador PID.png`).
-
-[Volver al contenido](#contenido)
-
----
-
-<a id="analogico"></a>
-## Controlador analógico con amplificadores operacionales
-
-Las ganancias $k_P$, $k_I$ y $k_D$ obtenidas durante la sintonización se utilizan como especificaciones para calcular las resistencias y los capacitores de un controlador PID implementado con amplificadores operacionales. Los valores se aproximan a valores comerciales, y el controlador se construye primero en Simscape Electrical para comparar su respuesta con la del bloque ideal `PID Controller`.
-
-| Etapa | Componente | Valor calculado | Valor comercial | Observaciones |
-|---|---|---|---|---|
-| Proporcional | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-| Integral | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-| Derivativa | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-| Sumador / restador de error | `COMPLETAR` | `COMPLETAR` | `COMPLETAR` | |
-
-> **Evidencia por incluir:** memoria de cálculo de componentes, circuito en Simscape y comparación con el PID ideal.
 
 [Volver al contenido](#contenido)
 
