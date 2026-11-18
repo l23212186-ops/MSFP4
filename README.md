@@ -1,4 +1,4 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=l23212186-ops/MSFP4)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=l23212186-ops/NOMBRE_DEL_REPOSITORIO)
 
 # Práctica — Modelado y control del sistema endocrino
 
@@ -274,7 +274,7 @@ $$e(t) = V_{s,\mathrm{control}}(t) - V_{s,\mathrm{caso}}(t)$$
 <a id="matlab"></a>
 ## Implementación en MATLAB, Simulink y Simscape
 
-La simulación se ejecuta desde el *Live Script* `Cid_23212186.mlx`, cargando el modelo de Simulink `sistema_endocrino.slx` y generando los resultados gráficos en formato vectorial (`.pdf`).
+La simulación se ejecuta desde el *Live Script* `Cid23212186.mlx`, cargando el modelo de Simulink `sistema.slx` y generando los resultados gráficos en formato vectorial (`.pdf`).
 
 Para las condiciones control y caso se construyen tres representaciones computacionales equivalentes:
 
@@ -441,7 +441,7 @@ El diagrama biológico elaborado en BioRender establece la equivalencia entre la
 - **Receptores de los huesos — $R_2$:** Oposición asociada al consumo o degradación hormonal.
 - **$V_s(t)$ (Respuesta metabólica):** Salida normalizada de la señal hacia el tejido receptor.
 
-![Diagrama Biológico](Diagrama_biologico.png)
+![Diagrama Biológico](Diagrama%20biologico.png)
 
 [Volver al contenido](#contenido)
 
@@ -526,24 +526,18 @@ flowchart TD
 .
 ├── README.md                      # Reporte y guía de reproducción
 ├── CITATION.cff                   # Datos de citación del repositorio
-├── Analisis_matematico.pdf        # Desarrollo matemático del sistema
-├── Diagrama_biologico.png         # Esquema biológico de BioRender
-├── Circuito_equivalente.png       # Circuito eléctrico propuesto
-├── Cid_23212186.mlx               # Cuaderno MATLAB del estudiante
-├── Cid_23212186.pdf               # Exportación del cuaderno en PDF
-├── sistema_endocrino.slx          # Modelo de Simulink (ecuaciones, G(s) y PID)
-├── Simscape_endocrino.slx         # Circuito equivalente en Simscape Electrical
-├── Controlador_PID.png            # Configuración y respuesta de la sintonización
-├── Controlador_analogico.pdf      # Cálculo de componentes del PID analógico
-├── Cid23212186.py                 # Script de simulación en Python
+├── LICENSE                        # Licencia del repositorio
+├── Analisis matematico.pdf        # Desarrollo matemático del sistema
 ├── Caso_matlab.pdf                # Exportación de la figura de MATLAB en PDF
 ├── Caso_python.pdf                # Exportación de la figura de Python en PDF
-└── Experimental/
-    ├── Fotos_montaje/             # Fotografías de los montajes en protoboard
-    └── Capturas_osciloscopio/     # Capturas de lazo abierto y lazo cerrado
+├── Cid23212186.mlx                # Cuaderno MATLAB del estudiante
+├── Cid23212186.pdf                # Exportación del cuaderno en PDF
+├── Cid23212186.py                 # Script de simulación en Python
+├── Controlador PID.png            # Configuración y respuesta de la sintonización PID
+├── Diagrama biologico.png         # Esquema biológico de BioRender
+├── Practica_Lab.bmp               # Evidencia de la práctica de laboratorio
+└── sistema.slx                    # Modelo de Simulink / Simscape Electrical
 ```
-
-*(Ajustar los nombres a los archivos reales del repositorio.)*
 
 [Volver al contenido](#contenido)
 
@@ -591,7 +585,7 @@ Las versiones mínimas del software no se especifican en el instructivo.
 | Circuito propuesto | Diagrama de control y caso con $V_e$, $V_s$, $R_1$, $C$, $L$, $R_2$, $F_e$, $F_s$, nodos y referencia |
 | Formulación matemática | Ecuaciones integro-diferenciales, funciones de transferencia $G_{\mathrm{control}}(s)$ y $G_{\mathrm{caso}}(s)$ |
 | Análisis del sistema | Error en estado estacionario, polos, estabilidad y bosquejo de respuesta |
-| Simulaciones | Modelos `.slx` (Simulink y Simscape) y respuestas en lazo abierto y cerrado |
+| Simulaciones | Modelo `sistema.slx` (Simulink y Simscape) y respuestas en lazo abierto y cerrado |
 | Sintonización | Ganancias $k_P$, $k_I$, $k_D$, figura de respuesta y configuración de `Tune` |
 | MATLAB | Cuaderno `.mlx`, exportación `.pdf` y figuras |
 | Python | Código `.py` y figuras |
