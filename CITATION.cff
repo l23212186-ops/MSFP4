@@ -3,7 +3,7 @@
 
 cff-version: 1.2.0
 title: >-
-  Práctica: Modelado y control del sistema endocrino
+  Práctica 4: Modelado y control del sistema endocrino
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
@@ -13,7 +13,7 @@ authors:
     family-names: Cid Pacheco
     email: l23212186@tectijuana.edu.mx
     affiliation: TecNM / IT Tijuana
-repository-code: 'https://github.com/l23212186-ops/NOMBRE_DEL_REPOSITORIO'
+repository-code: 'https://github.com/l23212186-ops/MSFP4'
 keywords:
   - Sistema endocrino
   - Secreción hormonal
